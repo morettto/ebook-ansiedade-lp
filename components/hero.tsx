@@ -12,7 +12,7 @@ export default function Hero() {
               Diga <span className="text-[#E5B17A]">"Adeus"</span> ao seu cativeiro interior!
             </h1>
             <p className="text-[#E5B17A] text-xl lg:text-2xl">
-              O ebook anti-ansiedade que ajudou <strong>milhares de americanos</strong>, agora em <strong>português!</strong>.
+              O ebook anti-ansiedade que ajudou <strong>milhares de americanos</strong>, agora em <strong>português!!!!</strong>.
             </p>
             <div className="space-y-6">
               <CountdownTimer />
