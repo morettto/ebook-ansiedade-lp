@@ -16,6 +16,13 @@ const testimonials = [
     flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brazil-flag-HJVCOK8yMQO6U7zAUhbtoIrtpNX4aj.png"
   },
   {
+    name: "Samara Moretto",
+    text: "Eu amo tanto meu marido João Vitor Moretto que nem sei dizer <3<3<3.",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+    flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brazil-flag-HJVCOK8yMQO6U7zAUhbtoIrtpNX4aj.png"
+  },
+  {
     name: "Michael Smith",
     text: "The 7-day challenge was a game-changer for me. Highly recommended!",
     rating: 4,
