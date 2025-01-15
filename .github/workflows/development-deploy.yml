@@ -28,8 +28,9 @@ jobs:
 
     - name: Deploy to Vercel (Development)
       env:
-        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}  # Certifique-se de que o segredo esteja configurado corretamente
-        VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }} # Caso você precise especificar a organização
-        VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }} # Caso você precise especificar o projeto
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}  # Seu Vercel token
+        VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}  # O ID do projeto Vercel
+        VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}  # O ID da organização Vercel
+        NODE_ENV: development
       run: |
-        npx vercel --yes --scope ${{ secrets.VERCEL_ORG_ID }} --token ${{ secrets.VERCEL_TOKEN }} --env NODE_ENV=development
+        npx vercel --token $VERCEL_TOKEN --scope $VERCEL_ORG_ID --project $VERCEL_PROJECT_ID --env NODE_ENV=development --yes
