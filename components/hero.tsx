@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button"
 import CountdownTimer from "./countdown-timer"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Hero() {
+  const checkout_link = "https://pay.kiwify.com.br/mhI3rfY"
   return (
     <section className="bg-[#2A2A2A] min-h-screen flex items-center">
       <div className="container mx-auto px-4 py-12">
@@ -16,11 +18,15 @@ export default function Hero() {
             </p>
             <div className="space-y-6">
               <CountdownTimer />
-              <Button 
-                className="bg-[#E5B17A] hover:bg-[#d4a06c] text-white text-lg px-8 py-6 rounded-full w-full"
-              >
-                EU QUERO!
-              </Button>
+              <Link href={checkout_link} legacyBehavior>
+                <a href={checkout_link} className="block w-full">
+                  <Button 
+                    className="bg-[#E5B17A] hover:bg-[#d4a06c] text-white text-lg px-8 py-6 rounded-full w-full"
+                  >
+                    EU QUERO!
+                  </Button>
+                </a>
+              </Link>
             </div>
           </div>
           <div className="relative">
@@ -33,8 +39,7 @@ export default function Hero() {
               priority
             />
             <div 
-              className="absolute -bottom-10 -right-10 z-10 transition-transform duration-300 hover:rotate-0"
-              style={{ transform: 'rotate(90deg)' }}
+              className="absolute bottom-4 left-4 z-10 transition-transform duration-300 ease-in-out transform rotate-45 hover:rotate-0"
             >
               <div className="bg-[#E5B17A] text-white p-6 rounded-full relative">
                 <div className="text-center">
@@ -50,4 +55,3 @@ export default function Hero() {
     </section>
   )
 }
-

@@ -16,10 +16,10 @@ const testimonials = [
     flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brazil-flag-HJVCOK8yMQO6U7zAUhbtoIrtpNX4aj.png"
   },
   {
-    name: "Samara Moretto",
-    text: "Eu amo tanto meu marido João Vitor Moretto que nem sei dizer <3<3<3.",
+    name: "Samara Andrade",
+    text: "Leitura muito benéfica para a alma.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+    image: "/resources/comments-pictures/pexels-lia-castro-1708654-12340459.jpg",
     flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brazil-flag-HJVCOK8yMQO6U7zAUhbtoIrtpNX4aj.png"
   },
   {
@@ -70,15 +70,34 @@ const testimonials = [
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
     flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/usa-T9tjekB09dH6hwzkgmlueyIHOBDsK5.png"
   },
-  // Continue with more testimonials...
+  {
+    name: "Joshua Santin",
+    text: "Light and pleasant reading",
+    rating: 4,
+    image: "/resources/comments-pictures/pexels-carlosfotografias-5653331.jpg",
+    flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/usa-T9tjekB09dH6hwzkgmlueyIHOBDsK5.png"
+  },
   {
     name: "Clara Oliveira",
     text: "Transformou minha relação com a ansiedade.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+    image: "/resources/comments-pictures/pexels-matheushenrin-3376116.jpg",
     flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brazil-flag-HJVCOK8yMQO6U7zAUhbtoIrtpNX4aj.png"
   },
-  // Add more testimonials to reach 30+ total
+  {
+    name: "Edward Prince",
+    text: "Helped me in a very difficult time",
+    rating: 4,
+    image: "/resources/comments-pictures/pexels-rogeriosouzafotografia-18339508.jpg",
+    flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/canada-1OVfKtVATSlpRxYy1AsDtAdabkvCEV.png"
+  },
+  {
+    name: "David Silva",
+    text: "Não esperava a ajuda que tive lendo isso",
+    rating: 5,
+    image: "/resources/comments-pictures/pexels-carlosfotografias-5669788.jpg",
+    flag: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brazil-flag-HJVCOK8yMQO6U7zAUhbtoIrtpNX4aj.png"
+  }
 ]
 
 export default function TestimonialsCarousel() {
