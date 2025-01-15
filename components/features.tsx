@@ -1,6 +1,8 @@
 import { Check, X } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Features() {
+  const checkout_link = "https://pay.kiwify.com.br/mhI3rfY"
   const included = [
     {
       title: "Conteúdo rico e detalhado."
@@ -19,7 +21,7 @@ export default function Features() {
   const notIncluded = [
     "Fórmulas mágicas. A verdadeira mudança depende do seu esforço e dedicação.",
     "Sugestões de medicamentos. Este é um guia 100% natural.",
-    "Acompanhamento profissional. O poder está em você e no conteúdo oferecido."
+    "Acompanhamento profissional. O poder está em você e no conteúdo oferecido."
   ]
 
   return (
@@ -59,9 +61,19 @@ export default function Features() {
               ))}
             </div>
           </div>
+          <div className="flex justify-center col-span-full">
+              <Link href={checkout_link} legacyBehavior>
+                <a href={checkout_link} className="block">
+                  <button 
+                    className="bg-[#E5B17A] hover:bg-[#d4a06c] text-white text-lg px-6 py-3 rounded-full"
+                  >
+                    GARANTIR OFERTA
+                  </button>
+                </a>
+              </Link>
+            </div>
         </div>
       </div>
     </section>
   )
 }
-

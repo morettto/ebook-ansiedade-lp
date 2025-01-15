@@ -28,6 +28,6 @@ jobs:
 
     - name: Deploy to Vercel (Development)
       env:
-        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}  # Certifique-se de que o segredo esteja configurado corretamente
       run: |
-        npx vercel --yes --scope ${{ secrets.VERCEL_SCOPE }} --env NODE_ENV=development
+        npx vercel --yes --token ${{ secrets.VERCEL_TOKEN }} --env NODE_ENV=development
