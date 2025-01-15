@@ -1,0 +1,33 @@
+name: Deploy to Vercel (Production)
+
+on:
+  push:
+    branches:
+      - main  # Deploy apenas na branch main
+
+jobs:
+  deploy:
+    name: Deploy to Vercel (Production)
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 22.11  # Altere para a versão necessária
+        cache: 'npm'
+
+    - name: Install Dependencies
+      run: npm install --legacy-peer-deps
+
+    - name: Build Project
+      run: npm run build
+
+    - name: Deploy to Vercel
+      env:
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      run: |
+        npx vercel --prod --confirm
