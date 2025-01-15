@@ -10,20 +10,20 @@ import {
 export default function FAQ() {
   const faqs = [
     {
-      question: "O CURSO É 100% ONLINE?",
-      answer: "Sim, todo o conteúdo é online. Isso proporciona liberdade para estudar em qualquer momento e local, de acordo com a sua disponibilidade de tempo. Você pode acessar os materiais de estudo através do computador, tablet, smart TV ou smartphone."
+      question: "COMO FUNCIONA A GARANTIA DE 7 DIAS?",
+      answer: "Durante o período de garantia, seu dinheiro fica retido. Se não estiver satisfeito com o eBook e solicitar reembolso, faremos a devolução imediata, sem burocracia."
     },
     {
-      question: "COMO FUNCIONA A GARANTIA?",
-      answer: "Durante o período de garantia de 7 dias, seu dinheiro fica retido. Se não estiver satisfeito com o curso e solicitar o reembolso, faremos a devolução imediata e sem burocracia."
+      question: "A LEITURA É DIFÍCIL?",
+      answer: "Todo o conteúdo do eBook foi pensado e planejado para ser acessível a qualquer leitor."
     },
     {
-      question: "SERÁ QUE EU DOU CONTA DO CURSO?",
-      answer: "Sim, a Área do Aluno é fácil de usar e o conteúdo foi pensado para facilitar seus estudos. Contamos também com uma equipe de suporte pronta para ajudá-lo com qualquer dúvida de acesso, proporcionando a melhor experiência possível. Você vai amar!"
+      question: "COMO EU RECEBO O EBOOK?",
+      answer: "O conteúdo é 100% digital, e você receberá um link de acesso por e-mail, que será liberado minutos após a confirmação do seu pagamento."
     },
     {
-      question: "POSSO PAGAR PARCELADO NO BOLETO?",
-      answer: "Não oferecemos esse tipo de parcelamento, mas entre em contato conosco por e-mail, ou WhatsApp. Vamos encontrar uma opção para facilitar sua inscrição ainda hoje."
+      question: "POR QUANTO TEMPO É VÁLIDO MEU LINK DE ACESSO?",
+      answer: "Válido por 12 meses."
     }
   ]
 
