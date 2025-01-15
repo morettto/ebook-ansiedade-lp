@@ -14,7 +14,7 @@ export default function Hero() {
               Diga <span className="text-[#E5B17A]">"Adeus"</span> ao seu cativeiro interior!
             </h1>
             <p className="text-[#E5B17A] text-xl lg:text-2xl">
-              O ebook anti-ansiedade que ajudou <strong>milhares de americanos</strong>, agora em <strong>português!!!!</strong>.
+              O ebook anti-ansiedade que ajudou <strong>milhares de americanos</strong>, agora em <strong>português!</strong>
             </p>
             <div className="space-y-6">
               <CountdownTimer />
@@ -30,16 +30,37 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Adeus,%20Ansiedade!%20Mockup%203-9m9FqVcxHYlA1eXhQI7fuzERZu1IHx.png"
-              alt="Ebook Adeus Ansiedade em múltiplos formatos"
-              width={1400}
-              height={1000}
-              className="w-full h-auto"
-              priority
-            />
+            {/* Background powder explosion */}
+            <div className="absolute inset-0 -m-10 z-0">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/traced-vecteezy_ai-generated-explosion-of-colored-powder-isolated-on-black_35823592%20(1)-RTTdr4E3EdU6McW1qIg5W1uHn7mTv6.png"
+                alt="Colorful background effect"
+                width={800}
+                height={600}
+                className="w-full h-full object-cover opacity-70"
+              />
+            </div>
+            
+            {/* Glow effect */}
+            <div className="absolute inset-0 blur-2xl z-10">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 via-transparent to-orange-500/30" />
+            </div>
+            
+            {/* Main mockup */}
+            <div className="relative z-20">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Adeus,%20Ansiedade!%20Mockup%203-9m9FqVcxHYlA1eXhQI7fuzERZu1IHx.png"
+                alt="Ebook Adeus Ansiedade em múltiplos formatos"
+                width={1400}
+                height={1000}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+            
+            {/* Bonus badge */}
             <div 
-              className="absolute bottom-4 left-4 z-10 transition-transform duration-300 ease-in-out transform rotate-45 hover:rotate-0"
+              className="absolute bottom-4 left-4 z-30 transition-transform duration-300 ease-in-out transform rotate-45 hover:rotate-0"
             >
               <div className="bg-[#E5B17A] text-white p-6 rounded-full relative">
                 <div className="text-center">
