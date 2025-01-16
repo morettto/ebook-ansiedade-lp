@@ -7,10 +7,12 @@ import TestimonialsCarousel from "../components/testimonials-carousel"
 import StatsBanner from "../components/stats-banner"
 import FAQ from "../components/faq"
 import ThankYou from "../components/thank-you"
+import GoogleAdsPixel from "@/components/google-ads"
 
 export default function SyntheticV0PageForDeployment() {
   return (
     <>
+      <GoogleAdsPixel />
       <Hero />
       <Features />
       <BonusSection />
